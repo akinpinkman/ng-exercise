@@ -7,10 +7,12 @@ import { Game } from '../models/game';
   providedIn: 'root',
 })
 export class GameService {
-  private apiUrl = 'http://localhost:3000';
+  private baseUrl = 'http://localhost:3000/games';
   constructor(private http: HttpClient) {}
+  
 
-  getGames(): Observable<Game[]> {
-    return this.http.get<Game[]>(this.apiUrl + '/games');
+  getGames(category: string): Observable<Game[]> {
+    const endpoint = `${this.baseUrl}?category=${category}`;
+    return this.http.get<Game[]>(endpoint);
   }
 }
