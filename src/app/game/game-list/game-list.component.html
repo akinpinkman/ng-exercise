@@ -1,5 +1,28 @@
-<div class="gamesContainer">
-    <ul>
-      <li *ngFor="let game of games">{{ game.gameName }}</li>
-    </ul>
-</div>
+<section class="sectionStyle">
+  <div class="swiper">
+    <header class="headerClass">
+      <h1 class="styledH1">Games</h1>
+      <svg class="swiper-button-prev" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+        width="24px" fill="#000000">
+        <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+      </svg>
+
+      <svg class="swiper-button-next" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+        width="24px" fill="#000000">
+        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+      </svg>
+    </header>
+
+    <div class="swiper-wrapper">
+      <div *ngFor="let game of games" class="swiper-slide">
+        <mat-card class="example-card" appearance="outlined">
+          <img [src]="game.gamePoster" class="avatar">
+        </mat-card>
+        <mat-card-title-group>
+          <mat-card-title class="grayFont">{{game.gameName}}</mat-card-title>
+          <mat-card-subtitle class="smallFont">{{game.gameProvider}}</mat-card-subtitle>
+        </mat-card-title-group>
+      </div>
+    </div>
+  </div>
+</section>

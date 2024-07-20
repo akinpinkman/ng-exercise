@@ -9,7 +9,6 @@ import { Game } from '../models/game';
 export class GameService {
   private baseUrl = 'http://localhost:3000';
   constructor(private http: HttpClient) {}
-  
 
   getGames(endpoint: string): Observable<Game[]> {
     const url = `${this.baseUrl}/${endpoint}`;
