@@ -1,17 +1,24 @@
-<nav class="navContainer">
-    <button (click)="toggleSidebar()">Toggle Sidebar</button>
+<nav class="headerContainer">
+    <div class="sideBarContainer">
+        <app-sidebar></app-sidebar>
+        <button (click)="toggleSidebar()">Toggle Sidebar</button>
+    </div>
     <div *ngIf="!(isSidebarOpen$ | async)" class="logoContainer">
         <img src="../../../favicon.ico">
         <h3>Angular Games</h3>
     </div>
-    <div class="navLeft">
-        <ul><a class="navLink" href="">Popüler Oyunlar</a></ul>
-        <ul><a class="navLink" href="">Korku Oyunları</a></ul>
-        <ul><a class="navLink" href="">Spor Oyunları</a></ul>
-        <ul><a class="navLink" href="">Bonus Oyunlar</a></ul>
-    </div>
-    <div class="navRight">
-        <button>Login</button>
-        <button>Register</button>
+
+    <div class="navContainer">
+        <div class="navLeft">
+            <ul><a class="navLink" href="">Popüler Oyunlar</a></ul>
+            <ul><a class="navLink" href="">Korku Oyunları</a></ul>
+            <ul><a class="navLink" href="">Spor Oyunları</a></ul>
+            <ul><a class="navLink" href="">Bonus Oyunlar</a></ul>
+        </div>
+
+        <div class="navRight">
+            <button>Login</button>
+            <button>Register</button>
+        </div>
     </div>
 </nav>

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { SidebarService } from '../../services/sidebar.service';
 import { AsyncPipe, CommonModule } from '@angular/common';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [AsyncPipe, CommonModule],
+  imports: [AsyncPipe, CommonModule, SidebarComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })

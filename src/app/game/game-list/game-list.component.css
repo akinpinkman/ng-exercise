@@ -15,7 +15,7 @@
 
 .swiper {
   background-color: rgb(235, 235, 235);
-  width: 1200px;
+  max-width: 1200px;
   padding: 2rem;
   border-radius: 1rem;
   position: relative;
