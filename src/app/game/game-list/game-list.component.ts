@@ -10,7 +10,8 @@ import 'swiper/css/bundle';
   styleUrl: './game-list.component.css',
 })
 export class GameListComponent implements OnInit, AfterViewInit {
-  @Input() category: string = 'games';
+  @Input() category: string = '';
+  @Input() title: string = '';
 
   swiper!: Swiper;
 
