@@ -1,5 +1,6 @@
 <nav class="navContainer">
-    <div class="logoContainer">
+    <button (click)="toggleSidebar()">Toggle Sidebar</button>
+    <div *ngIf="!(isSidebarOpen$ | async)" class="logoContainer">
         <img src="../../../favicon.ico">
         <h3>Angular Games</h3>
     </div>
