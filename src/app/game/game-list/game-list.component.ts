@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { Game } from '../../models/game';
-import { GameService } from '../../../services/game.service';
+import { GameService } from '../../services/game.service';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
