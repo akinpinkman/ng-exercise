@@ -11,15 +11,7 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  isSidebarOpen$ = this.sidebarService.isSidebarOpen$;
+  isSidebarOpen$ = this.sideBarService.isSidebarOpen$;
 
-  constructor(
-    private sidebarService: SidebarService,
-    private renderer: Renderer2,
-    private elementReft: ElementRef,
-  ) {}
-
-  toggleSidebar() {
-    this.sidebarService.toggleSidebar();
-  }
+  constructor(private sideBarService: SidebarService) {}
 }

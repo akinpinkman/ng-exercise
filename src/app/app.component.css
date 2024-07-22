@@ -1,0 +1,11 @@
+.headerSidebarContainer {
+  background-color: rgb(235, 235, 235);
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  flex-grow: 1;
+}

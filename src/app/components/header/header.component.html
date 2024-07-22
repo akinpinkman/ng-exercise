@@ -1,8 +1,4 @@
 <nav class="headerContainer">
-  <div class="buttonContainer">
-    <button (click)="toggleSidebar()">Toggle</button>
-  </div>
-
   <div *ngIf="!(isSidebarOpen$ | async)" class="logoContainer">
     <img src="../../../favicon.ico" />
     <h3>Angular Games</h3>
