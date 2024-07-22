@@ -5,6 +5,12 @@
   background-color: rgb(235, 235, 235);
 }
 
+.buttonContainer {
+  background-color: rgb(162, 162, 162);
+  padding-top: 4rem;
+  margin-top: auto;
+}
+
 .navContainer {
   display: flex;
   align-items: center;

@@ -7,5 +7,10 @@ import { GameModule } from './game/game.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), importProvidersFrom(HttpClientModule), importProvidersFrom(GameModule), provideAnimationsAsync()],
+  providers: [
+    provideRouter(routes),
+    importProvidersFrom(HttpClientModule),
+    importProvidersFrom(GameModule),
+    provideAnimationsAsync(),
+  ],
 };
