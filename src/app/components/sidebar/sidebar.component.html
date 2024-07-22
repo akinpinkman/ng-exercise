@@ -1,6 +1,6 @@
 <aside class="sideBarContainer">
-  <div class="buttonContainer">
-    <button (click)="toggleSidebar()">Toggle Sidebar</button>
+  <button (click)="toggleSidebar()">Toggle Sidebar</button>
+  <div *ngIf="isSidebarOpen$ | async">
     <div class="sideBarLogo">
       <img src="../../../favicon.ico" />
       <h3>Angular Games</h3>
