@@ -1,4 +1,23 @@
 .sideBarContainer {
   background-color: rgb(235, 235, 235);
   height: 100vh;
+  position: relative;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  gap: 1rem;
+  padding-left: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.flexx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
