@@ -10,13 +10,17 @@
   align-items: flex-end;
 }
 
+.sideBarContainer.active {
+  width: 250px;
+}
+
 .sidebarElements {
   display: flex;
   flex-direction: column;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .logoContainer {
@@ -31,5 +35,12 @@
 
 .material-symbols-outlined {
   position: absolute;
-  top: 2.2rem;
+  padding-left: 1rem;
+  top: 2.3rem;
+  left: 0;
+}
+
+.sideBarContainer.active .material-symbols-outlined {
+  left: 14rem;
+  padding-left: 0;
 }

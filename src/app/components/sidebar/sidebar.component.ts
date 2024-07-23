@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css',
+  styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent {
   isSidebarOpen$ = this.sidebarService.isSidebarOpen$;
@@ -24,11 +24,11 @@ export class SidebarComponent {
     const sideBarContainer =
       this.el.nativeElement.querySelector('.sideBarContainer');
     if (sideBarContainer) {
-      const currentWidth = sideBarContainer.style.width;
-      if (currentWidth === '250px') {
-        this.renderer.removeStyle(sideBarContainer, 'width');
+      const isActive = sideBarContainer.classList.contains('active');
+      if (isActive) {
+        this.renderer.removeClass(sideBarContainer, 'active');
       } else {
-        this.renderer.setStyle(sideBarContainer, 'width', '250px');
+        this.renderer.addClass(sideBarContainer, 'active');
       }
     }
   }
