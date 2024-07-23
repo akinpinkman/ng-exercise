@@ -1,6 +1,7 @@
 .headerContainer {
   display: flex;
   justify-content: center;
+
   background-color: rgb(235, 235, 235);
 }
 
@@ -13,6 +14,7 @@
 .navContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 60%;
   padding-top: 1rem;
   padding-bottom: 1rem;
