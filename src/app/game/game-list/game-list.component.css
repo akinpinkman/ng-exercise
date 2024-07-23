@@ -37,6 +37,7 @@
 .styledH1 {
   font-size: 20px;
   font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 .swiper-slide {
