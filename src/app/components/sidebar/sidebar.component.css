@@ -1,23 +1,35 @@
-.sideBarContainer {
+.sideBarWrapper {
   background-color: rgb(235, 235, 235);
   height: 100vh;
   position: relative;
 }
 
+.sideBarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sidebarElements {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5rem;
+}
+
 .logoContainer {
   display: flex;
   align-items: center;
-  padding-top: 1rem;
+  margin: 0;
+  margin-right: auto;
+  margin-left: 1rem;
   gap: 1rem;
-  padding-left: 3rem;
-  position: absolute;
-  top: 0;
-  right: 0;
+  padding-top: 1rem;
 }
 
-.flexx {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.material-symbols-outlined {
+  position: absolute;
+  top: 2.2rem;
 }

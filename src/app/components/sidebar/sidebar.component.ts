@@ -25,10 +25,10 @@ export class SidebarComponent {
       this.el.nativeElement.querySelector('.sideBarContainer');
     if (sideBarContainer) {
       const currentWidth = sideBarContainer.style.width;
-      if (currentWidth === '300px') {
+      if (currentWidth === '250px') {
         this.renderer.removeStyle(sideBarContainer, 'width');
       } else {
-        this.renderer.setStyle(sideBarContainer, 'width', '300px');
+        this.renderer.setStyle(sideBarContainer, 'width', '250px');
       }
     }
   }
